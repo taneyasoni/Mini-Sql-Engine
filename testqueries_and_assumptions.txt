@@ -1,0 +1,32 @@
+### assumptions:
+#  table names column names and keywords are all case insensitive
+#  all column names are unique
+#  column names may/may not have spaces between them
+#  table names cant have spaces between them ie. format should be table1,table2,table3,...
+#  order of keywords should be 'select','from','where','group by','order by'
+
+
+### Test queries:
+#actual_query = "select min(A),E from table1,table2 where E < 6000 and A > 500 group by E order by E desc;"
+#actual_query = "select max(A) from table1 group by A;"
+#actual_query = "select A, max(b) from table1 group by A order by A desc;"
+# actual_query = "select distinct A,B,X from table1,table2;"
+#actual_query = "Select distinct A,B from table1,table2 where A = 922 AND B = 158;"
+# actual_query = "Select distinct A,B from table1,table2 where A > 0 AND B < 6000;"
+# actual_query = "Select distinct A,B from table1 where b = a and b > 700;"
+# actual_query = "select count(*) from table1,table2,table3;"
+#actual_query = "select A,max(B),min(C) from table1,table2 group by A;"
+# actual_query = "select distinct A,sum(B),sum(C) from table1,table2 group by A;"
+# actual_query = "select distinct sum(C),sum(B) from table1,table2 group by A;"
+# actual_query = "select max(A),min(B),sum(C) from table1,table2;"
+# actual_query = "select count(A) from table1;"
+# actual_query = "select * from table1,table2,table3,table3;"
+# actual_query = "select * from table1;"
+# actual_query = "select count(*) from table1;"
+# actual_query = "Select distinct A,B from table1,table2 where 500 > a;"
+# actual_query = "Select distinct A,B from table1 where 67 = 78;" # a > 500, a < 500, a = b
+# actual_query = "select * from table1,table2 where b = a and d > 800;"
+# actual_query = "select max(B),a from table1 group by A order by A;"
+# actual_query = "select A,E from table1,table2 where E < 6000 and A > 500 group by E order by E;"
+# actual_query = "select E,min(A) from table1,table2 where E < 6000 and A > 500 group by E order by E;"
+# actual_query = 'select count(c),max(*),min(B) from table1;'
